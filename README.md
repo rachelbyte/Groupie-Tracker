@@ -1,4 +1,4 @@
-# Groupie-Tracker
+# Groupie-Tracker (Visualizations)
 A mix of Groupie Tracker (main) and Visualizations
 
 Objectives
@@ -7,7 +7,8 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
 
     It will be given an API, that consists in four parts:
 
-        The first one, artists, containing information about some bands and artists like their name(s), image, in which year they began their activity, the date of their first album and the members.
+        The first one, artists, containing information about some bands and artists like their name(s), image, in which year
+        they began their activity, the date of their first album and the members.
 
         The second one, locations, consists in their last and/or upcoming concert locations.
 
@@ -20,7 +21,8 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
 
     This project also focuses on the creation of events/actions and on their visualization.
         The event/action we want you to do is known as a client call to the server (client-server). 
-        We can say it is a feature of your choice that needs to trigger an action. This action must communicate with the server in order to recieve information, ([request-response])(https://en.wikipedia.org/wiki/Request%E2%80%93response)
+        We can say it is a feature of your choice that needs to trigger an action. This action must communicate 
+        with the server in order to recieve information, ([request-response])(https://en.wikipedia.org/wiki/Request%E2%80%93response)
         An event consists in a system that responds to some kind of action triggered by the client, time, or any other factor.
 
 Instructions
@@ -46,6 +48,19 @@ This project will help you learn about :
     HTML.
     Event creation and display.
     Client-server.
+    
+Groupie tracker visualizations consists of manipulating the data coming from the API 
+and displaying it in the most presentable way possible to you. 
+
+
+    Strive for consistency
+    Enable frequent users to use shortcuts
+    Offer informative feedback
+    Design dialogue to yield closure
+    Offer simple error handling
+    Permit easy reversal of actions
+    Support internal locus of control
+    Reduce short-term memory load
 
     
 
