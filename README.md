@@ -1,6 +1,9 @@
 # Groupie-Tracker (Visualizations)
 A mix of Groupie Tracker (main) and Visualizations
 
+![gt](https://user-images.githubusercontent.com/108974377/178727938-0a785a11-47b6-40a8-b359-fd936b55bd55.jpeg)
+Can be ran on server https://localhost:3000
+
 Objectives
 
 Groupie Trackers consists on receiving a given API and manipulate the data contained in it, in order to create a site, displaying the information.
