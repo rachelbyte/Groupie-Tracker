@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Groupie Tracker</title>
+  </head>
+<body>
+<h2>Groupie Tracker</h2>
+
+<div class="cards">
+  {{range .}}
+  <article>
+      <div class="card">
+     <div class="additional">
+       <div class="user-card">
+         <div class="level">Creation Date: {{.CreationDate}}</div>
+  <div class="points">First Album: {{.FirstAlbum}}</div>
+          <img src="{{.Image}}" style="width:100%">
+       </div>
+
+   <div class="more-info">    
+  <h1><b>{{.Name}}</b></h1>
+  Concert Dates:
+  {{range $key, $value := .Relations.DatesLocations}}
+ <div id="key" name="{{$key}}">{{$key}}</div>
+    {{range $v := index $value }}
+        <p>{{$v}}</p>
+    {{end}}
+    {{end}}
+   </div>
+   
+     </div>
+<div class="general">
+    <h1>{{.Name}}</h1>
+    <div class="coords">
+    <span>Artist:</span>
+    <span>{{range .Members}}
+       <p>{{ . }}</p>    
+       {{ end }}</span>
+       
+    </div>
+    
+     </div>
+    
+     </div>
+   </article> 
+
+  {{end}}   
+
+  </div>
+
+</body>
+</html>
+

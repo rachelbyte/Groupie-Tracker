@@ -1,0 +1,155 @@
+
+body {
+    background: linear-gradient(135deg, #f1a8ff 0%, #fc9bb8 100%);
+  }
+  
+  .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*repeat(4, 1fr);*/
+  gap: 20px;
+  }
+  
+  .card {
+    
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    background:  #fff;
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+  
+  }
+  
+  .card:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    padding-bottom: calc(5/6 * 100%);
+  }
+  
+  .card h1 {
+    text-align: center;
+  }
+  
+  .card .additional {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(135deg, #f1a8ff 0%, #fc9bb8 100%);
+    transition: width 0.4s;
+    overflow: hidden;
+    word-wrap: break-word;
+    z-index: 2;
+    font-size: 10px;
+    border-radius: 5px;
+  } 
+  
+  .card:hover .additional{
+    width: 100%;
+  }
+  
+  
+  .card .additional .user-card {
+    width: 100px;
+    height: 100%;
+    position: relative;
+    float: left;
+  }
+  
+  .card .additional .user-card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: -2px;
+    height: 80%;
+    border-left: 2px solid rgba(0,0,0,0.025);
+  }
+  
+  .card .additional .user-card .level {
+    top: 20%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    font-weight: bold;
+    background: rgba(0,0,0,0.15);
+    padding: 0.125rem 0.60rem;
+    border-radius: 100px;
+    text-align: center;
+    /*white-space: nowrap;*/
+  }
+  .card .additional .user-card .points {
+    position: relative;
+    top: 60%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    font-weight: bold;
+    background: rgba(0,0,0,0.15);
+    padding: 0.125rem 0.60rem;
+    text-align: center;
+    border-radius: 100px;
+  }
+  
+  .card .additional .user-card img {
+  border-radius : 15px;
+  align-items: center;
+  }
+  .card .additional .more-info {
+    width: 200px;
+    left: 110px;
+    position: absolute;
+    height: 100%;
+    font-size: 10px;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .card .additional .more-info h1 {
+    color: #fff;
+   
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  #key {
+    color: #111;
+   
+    margin: 0 10px;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .card .additional .more-info p {
+    color: #fff;
+    display: inline-block;
+   
+    margin: 0 10px;
+   
+  }
+  
+  .card .general {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 0;
+    text-align: center;
+    font-size: 10px;
+    
+  }
+  
+  
+  .card .general .coords span + span {
+    float: none;
+  }
+  
+   
